@@ -3,6 +3,12 @@ const client = new Discord.Client({ disableMentions: true })
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 });
+client.on('ready', () => {
+let status = [``,``]
+  setInterval(function(){
+  let statuss = status[Math.floor(Math.random() * status.length)];
+  client.user.setActivity(statuss, {type: "WATCHING"})}, 4000) //isi angka terserah
+});
 const config = require("./config.json")
 client.on('message', async message => {
 const prefix = config.prefix
