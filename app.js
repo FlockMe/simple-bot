@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = new Discord.Client({ disableMentions: true })
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 });
