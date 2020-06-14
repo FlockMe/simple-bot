@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client({ disableMentions: true })
+const config = require("./config.json")
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -9,7 +10,6 @@ let status = [``,``]
   let statuss = status[Math.floor(Math.random() * status.length)];
   client.user.setActivity(statuss, {type: "WATCHING"})}, 4000) //isi angka terserah
 });
-const config = require("./config.json")
 client.on('message', async message => {
 const prefix = config.prefix
     let msg = message.content.toLowerCase();   
