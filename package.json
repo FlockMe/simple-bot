@@ -15,7 +15,8 @@
     "discord.js": "^12.2.0",
     "random-puppy": "*",
     "novelcovid": "*",
-    "fs": "*"
+    "fs": "*",
+    "quick.db": "*"
   },
   "engines": {
     "node": "12.x"
