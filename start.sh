@@ -1,5 +1,7 @@
-echo Starting Bot
+#!/usr/bin/sh
 
-echo Bot Siap Di Gunakan!
+echo "[INFO] Starting Bot"
+clear
+echo "[INFO] Bot Siap Di Gunakan!"
 
 node app.js
